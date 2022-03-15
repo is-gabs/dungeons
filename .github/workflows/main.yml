@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Static checks
 on:
   push:
     branches:
@@ -34,6 +34,3 @@ jobs:
     - name: Run lint
       run: |
         make lint
-    - name: Run tests
-      run: |
-        make test_unit
