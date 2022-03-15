@@ -1,0 +1,33 @@
+from enum import Enum
+
+RESOLUTION = 16, 9
+
+BAR_WIDTH = SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 450
+SCREEN_SIZE = SCREEN_WIDTH, SCREEN_HEIGHT
+
+BAR_HEIGHT = 100
+
+AVAILABLE_SCREEN_HEIGHT = SCREEN_HEIGHT - BAR_HEIGHT
+
+TICK = 15
+
+BLOCK_SIZE = 50
+
+CHAR_SIZE = 20
+CHAR_MARGIN = 15
+
+
+class Directions(Enum):
+    UP = 0
+    LEFT = 90
+    DOWN = 180
+    RIGHT = 270
+
+
+DIRECTIONS = [
+    Directions.UP,
+    Directions.RIGHT,
+    Directions.DOWN,
+    Directions.LEFT
+]
